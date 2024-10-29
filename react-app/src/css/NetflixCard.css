@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  width: 80%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  width: 20lvw;
+  height: 61vh;
+  margin: 8px 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  border-radius: 7px;
+}
+.card img {
+  border-radius: 7px 7px 0px 0px;
+  width: 100%;
+  height: 25vh;
+}
+
+h2,
+h3 {
+  padding: 0px 4px;
+  font-size: 1rem;
+  margin: 9px 0px;
+}
+
+p,
+a {
+  padding: 0px 4px;
+  font-size: 0.9rem;
+  margin: 9px 0px;
+  color: rgb(93, 93, 93);
+}
+
+button {
+  border-radius: 7px;
+  padding: 8px 15px;
+  text-align: center;
+  background-color: rgb(63, 168, 233);
+  color: white;
+}
+
+@media (max-width: 872px) {
+  .container {
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    width: 30lvw;
+    height: 57vh;
+    margin: 8px 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+  }
+  .card img {
+    border-radius: 7px 7px 0px 0px;
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 672px) {
+  .container {
+    width: 80%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 40lvw;
+    height: 57vh;
+    margin: 8px 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+  }
+  .card img {
+    border-radius: 7px 7px 0px 0px;
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 60lvw;
+    height: 54vh;
+    margin: 8px 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+  }
+  .card img {
+    border-radius: 7px 7px 0px 0px;
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+.high {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(71, 219, 71);
+}
+
+.low {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(210, 189, 53);
+}
